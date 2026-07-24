@@ -1,7 +1,23 @@
 aid: cogni
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cogni.png
 name: Cogni
-description: Cogni is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Cogni is a non-custodial cryptocurrency wallet and digital-asset management app that consolidates
+  cash, crypto, and NFTs in a single mobile experience. Users hold their own private keys, back up their
+  seed phrase to iCloud, manage assets across multiple blockchains and Layer 2 networks, store and view
+  NFTs, and connect to web3 dApps directly from the app. Backed by Techstars, Cogni is a consumer-facing
+  mobile product and publishes no public developer API, SDK, or OpenAPI at this time; this profile captures
+  its public web properties and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/cogni/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Cryptocurrency
+- Wallet
+- Web3
+- Blockchain
+- NFT
+- Self-Custody
+- Fintech
+- Digital Assets
+- dApps
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +48,18 @@ maintainers:
 common:
 - type: Website
   url: https://getcogni.com/
+- type: Blog
+  url: https://getcogni.com/blog
+- type: Support
+  url: https://cognihelp.zendesk.com/hc/en-us
+- type: PrivacyPolicy
+  url: https://getcogni.com/privacy-policy
+- type: TermsOfService
+  url: https://getcogni.com/terms-of-use
+- type: DomainSecurity
+  url: security/cogni-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
